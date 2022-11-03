@@ -73,11 +73,53 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Panel.Designer.vb">
+      <DependentUpon>Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Reportes.Designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema_historial.Designer.vb">
+      <DependentUpon>Sistema_historial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema_historial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema_Informacion.Designer.vb">
+      <DependentUpon>Sistema_Informacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema_Informacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_mensajeria.Designer.vb">
+      <DependentUpon>Interfaz_mensajeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_mensajeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_cita.Designer.vb">
+      <DependentUpon>Interfaz_cita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autenticacion.Designer.vb">
+      <DependentUpon>Autenticacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Autenticacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion.Designer.vb">
+      <DependentUpon>Presentacion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +139,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Autenticacion.resx">
+      <DependentUpon>Autenticacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion.resx">
+      <DependentUpon>Presentacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -120,9 +171,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaNegocio\CapaNegocio.vbproj">
-      <Project>{90853c30-9f50-4e06-9fcb-e20e172391e4}</Project>
-      <Name>CapaNegocio</Name>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.vbproj">
+      <Project>{75b106fc-bd19-4a03-bb9d-f1da48230576}</Project>
+      <Name>CapaDatos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
